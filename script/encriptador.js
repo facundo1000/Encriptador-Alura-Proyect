@@ -1,4 +1,7 @@
+//TODO: no se puede realizar las acciones infinitas veces
 var input = document.getElementById("caja-encriptador");
+var input2 = document.getElementById("caja-encriptador");
+var input3 = document.getElementById("caja-respuesta");
 
 function encripter() {
   var text = "";
@@ -32,10 +35,8 @@ function encripter() {
         break;
     }
   }
-  alert(text);
+  input3.append(text);
 }
-
-var input2 = document.getElementById("caja-encriptador");
 
 function desencriptar() {
   var text2 = "";
@@ -75,13 +76,22 @@ function desencriptar() {
     }
   }
 
-  alert(text2);
+  //alert(text2);
+  input3.append(text2);
+}
+
+function copiarTexto() {
+  input3.select();
+  document.execCommand("copy");
 }
 
 input.focus();
 
-var button = document.getElementById("btn-encriptar");
-button.onclick = encripter;
+var button_encriptar = document.getElementById("btn-encriptar");
+button_encriptar.onclick = encripter;
 
-var button2 = document.getElementById("btn-desencriptar");
-button2.onclick = desencriptar;
+var button_desencriptar = document.getElementById("btn-desencriptar");
+button_desencriptar.onclick = desencriptar;
+
+var button_copiar = document.getElementById("btn-copiar");
+button_copiar.onclick = copiarTexto;

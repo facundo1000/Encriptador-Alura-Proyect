@@ -1,0 +1,31 @@
+/* TODO: mejorar los estilos */
+
+* {
+  background: lightslategray;
+}
+main {
+  align-items: center;
+}
+
+body,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+.caja_de_encriptado {
+  padding: 0 0 10px;
+  margin: 0 auto;
+}
+
+textarea {
+  border: 1px solid black;
+  background: whitesmoke;
+  /* Cambiar de ser necesario */
+  resize: none;
+}
+
+button {
+  background: white;
+  font-size: 18px;
+  margin: 8px 0;
+}

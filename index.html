@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main_style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Encriptador</title>
   </head>
   <body>
@@ -13,18 +16,24 @@
       <header><h1>Encriptador</h1></header>
 
       <div class="caja_de_encriptado">
-        <textarea id="caja-encriptador" cols="60" rows="10"></textarea>
+        <textarea
+          id="caja-encriptador"
+          placeholder="Ingrese un texto para encriptar/desencriptar"
+          cols="60"
+          rows="10"
+        ></textarea>
       </div>
-
-      <br />
 
       <div class="caja_encriptada">
-        <textarea id="caja-respuesta" cols="20" rows="10"></textarea>
+        <textarea id="caja-respuesta" cols="60" rows="10"></textarea>
       </div>
-
+      <!-- Botones de accion -->
       <button id="btn-encriptar">Encriptar</button>
       <button id="btn-desencriptar">Desencriptar</button>
+      <button id="btn-copiar">Copiar</button>
     </main>
+
+    <footer><p>Developer: Facundo Martinez</p></footer>
   </body>
   <script src="script/encriptador.js"></script>
 </html>
