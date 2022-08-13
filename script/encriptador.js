@@ -76,7 +76,6 @@ function desencriptar() {
     }
   }
 
-  //alert(text2);
   input3.append(text2);
 }
 
