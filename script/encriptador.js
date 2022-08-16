@@ -3,6 +3,10 @@ var input = document.getElementById("caja-encriptador");
 var input2 = document.getElementById("caja-encriptador");
 var input3 = document.getElementById("caja-respuesta");
 
+function clearBox(){
+  input3.value = " ";
+}
+
 function encripter() {
   var text = "";
   for (var i = 0; i < input.value.length; i++) {
@@ -35,6 +39,7 @@ function encripter() {
         break;
     }
   }
+  //clearBox();
   input3.append(text);
 }
 

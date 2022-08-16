@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/main_style.css" />
+    <link rel="stylesheet" href="/style/main_style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -24,23 +24,30 @@
       rows="10"
     ></textarea> -->
 
-    <div class="dialogo-recuadro">
-      <h3>Ningun mensaje fue encontrado</h3>
-      <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-    </div>
+    <div class="contexto-respuesta">
+      <textarea id="caja-respuesta"></textarea>
 
-    <textarea id="caja-respuesta"></textarea>
-
-    <div class="botones-encriptar-desencriptar">
-      <button id="btn-encriptar"><p>Encriptar</p></button>
-      <button id="btn-desencriptar"><p>Desencriptar</p></button>
+      <div class="dialogo-recuadro">
+        <h3>Ningun mensaje fue encontrado</h3>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+      <button id="btn-copiar"><p class="text-btn">Copiar</p></button>
     </div>
 
     <!-- Botones de accion -->
+    <div class="botones-encriptar-desencriptar">
 
-    <button class="btn" id="btn-copiar">Copiar</button>
+      <button id="btn-encriptar">
+        <p class="text-btn" id="text-btn-encriptar">Encriptar</p>
+      </button>
+
+      <button id="btn-desencriptar">
+        <p class="text-btn" id="text-btn-desencriptar">Desencriptar</p>
+      </button>
+      
+    </div>
 
     <footer><p>Developer: Facundo Martinez</p></footer>
   </body>
-  <script src="script/encriptador.js"></script>
+  <script src="/script/encriptador.js"></script>
 </html>
